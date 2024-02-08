@@ -6,7 +6,7 @@ const perguntasFutebolEuropeu = [
       "Chelsea",
       "Bayern de Munique",
     ],
-    correta: 1, // Resposta correta: Chelsea
+    correta: 1
   },
   {
     pergunta: "Em qual país foi sediada a Eurocopa 2020?",
@@ -15,7 +15,7 @@ const perguntasFutebolEuropeu = [
       "Alemanha",
       "Inglaterra",
     ],
-    correta: 0, // Resposta correta: Itália
+    correta: 0
   },
   {
     pergunta: "Quem foi o artilheiro da última temporada da La Liga (2021-2022)?",
@@ -24,7 +24,7 @@ const perguntasFutebolEuropeu = [
       "Karim Benzema",
       "Cristiano Ronaldo",
     ],
-    correta: 1, // Resposta correta: Karim Benzema
+    correta: 1
   },
   {
     pergunta: "Qual país sediará a Copa do Mundo da FIFA em 2022?",
@@ -33,7 +33,7 @@ const perguntasFutebolEuropeu = [
       "Rússia",
       "Catar",
     ],
-    correta: 2, // Resposta correta: Catar
+    correta: 2
   },
   {
     pergunta: "Quantas vezes o Liverpool ganhou a Liga dos Campeões da UEFA até agora?",
@@ -42,7 +42,7 @@ const perguntasFutebolEuropeu = [
       "5",
       "6",
     ],
-    correta: 2, // Resposta correta: 6
+    correta: 2
   },
   {
     pergunta: "Quem é o atual campeão da Premier League (2021-2022)?",
@@ -51,7 +51,7 @@ const perguntasFutebolEuropeu = [
       "Manchester United",
       "Liverpool",
     ],
-    correta: 0, // Resposta correta: Manchester City
+    correta: 0
   },
   {
     pergunta: "Qual jogador recebeu a Chuteira de Ouro na temporada 2020-2021?",
@@ -60,7 +60,7 @@ const perguntasFutebolEuropeu = [
       "Lionel Messi",
       "Cristiano Ronaldo",
     ],
-    correta: 0, // Resposta correta: Robert Lewandowski
+    correta: 0
   },
   {
     pergunta: "Quem é conhecido como 'Faraó' e joga como atacante no Liverpool?",
@@ -69,7 +69,7 @@ const perguntasFutebolEuropeu = [
       "Sadio Mané",
       "Roberto Firmino",
     ],
-    correta: 0, // Resposta correta: Mohamed Salah
+    correta: 0
   },
   {
     pergunta: "Em qual estádio foi disputada a final da Eurocopa 2016?",
@@ -78,7 +78,7 @@ const perguntasFutebolEuropeu = [
       "Stade de France",
       "Allianz Arena",
     ],
-    correta: 1, // Resposta correta: Stade de France
+    correta: 1
   },
   {
     pergunta: "Quantos títulos da Liga dos Campeões o Barcelona conquistou até agora?",
@@ -87,7 +87,7 @@ const perguntasFutebolEuropeu = [
       "5",
       "6",
     ],
-    correta: 1, // Resposta correta: 5
+    correta: 1
   },
 ];
 
