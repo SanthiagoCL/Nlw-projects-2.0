@@ -1,4 +1,4 @@
-const perguntas = [
+const perguntasFutebolEuropeu = [
   {
     pergunta: "Qual clube venceu a Liga dos Campeões da UEFA na temporada 2020-2021?",
     resposta: [
@@ -91,7 +91,7 @@ const perguntas = [
   },
 ];
 
-  
+
   const quiz = document.querySelector('#quiz')
   const template = document.querySelector('template')
   
