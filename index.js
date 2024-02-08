@@ -1,137 +1,136 @@
 const perguntas = [
   {
-    pergunta: "Qual é a finalidade do comando 'console.log()' em JavaScript?",
+    pergunta: "Qual clube venceu a UEFA Champions League na temporada 2020-2021?",
     respostas: [
-      "Exibir uma mensagem de erro",
-      "Imprimir dados no console",
-      "Criar uma variável"
+      "A. Real Madrid",
+      "B. Liverpool",
+      "C. Chelsea",
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "Quem foi o artilheiro da Premier League na temporada 2020-2021?",
+    respostas: [
+      "A. Mohamed Salah",
+      "B. Bruno Fernandes",
+      "C. Harry Kane",
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "Qual país sediou a Eurocopa 2020 (adiada para 2021)?",
+    respostas: [
+      "A. França",
+      "B. Alemanha",
+      "C. Itália",
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "Em que ano a França sediou e venceu a Copa do Mundo da FIFA?",
+    respostas: [
+      "A. 1998",
+      "B. 2002",
+      "C. 2006",
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Qual jogador venceu o prêmio de Melhor Jogador da FIFA em 2020?",
+    respostas: [
+      "A. Lionel Messi",
+      "B. Cristiano Ronaldo",
+      "C. Robert Lewandowski",
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Qual equipe conquistou mais títulos da Bundesliga até 2022?",
+    respostas: [
+      "A. Borussia Dortmund",
+      "B. Bayern de Munique",
+      "C. Bayer Leverkusen",
     ],
     correta: 1
   },
   {
-    pergunta: "Qual é a função do operador '===' em comparações em JavaScript?",
+    pergunta: "Quem é o treinador do Manchester City na temporada 2023-2024?",
     respostas: [
-      "Comparação de valores sem considerar o tipo",
-      "Atribuição de valores",
-      "Comparação estrita de valores e tipos"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "Como se declara uma variável em JavaScript?",
-    respostas: [
-      "let myVar;",
-      "const myVar = 10;",
-      "ambas as opções acima estão corretas"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "O que é uma função em JavaScript?",
-    respostas: [
-      "Um tipo de dado",
-      "Um bloco de código reutilizável",
-      "Uma variável global"
+      "A. Jurgen Klopp",
+      "B. Pep Guardiola",
+      "C. Carlo Ancelotti",
     ],
     correta: 1
   },
   {
-    pergunta: "Qual é a diferença entre 'let' e 'const' na declaração de variáveis?",
+    pergunta: "Qual jogador português é conhecido como 'O Fenômeno'?",
     respostas: [
-      "Nenhuma, são sinônimos",
-      "let é usado para valores constantes, const para variáveis",
-      "let permite reatribuição, const cria variáveis imutáveis"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "O que é o DOM em JavaScript?",
-    respostas: [
-      "Um método de criptografia",
-      "Um modelo de objeto para manipular documentos HTML",
-      "Uma linguagem de programação"
+      "A. Cristiano Ronaldo",
+      "B. Luis Figo",
+      "C. Rui Costa",
     ],
     correta: 1
   },
   {
-    pergunta: "Como se realiza uma iteração sobre os elementos de um array em JavaScript?",
+    pergunta: "Em que ano o Barcelona venceu seu primeiro título da UEFA Champions League?",
     respostas: [
-      "Usando a estrutura 'if-else'",
-      "Com a declaração 'switch'",
-      "Utilizando loops como 'for' ou 'forEach'"
+      "A. 1992",
+      "B. 1996",
+      "C. 2000",
     ],
-    correta: 2
+    correta: 0
   },
   {
-    pergunta: "O que é o JSON em JavaScript?",
+    pergunta: "Qual clube italiano é popularmente conhecido como 'Velha Senhora'?",
     respostas: [
-      "Um método de formatação de texto",
-      "Uma linguagem de estilização",
-      "Um formato de dados leve e intercambiável"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "Qual é a diferença entre 'null' e 'undefined' em JavaScript?",
-    respostas: [
-      "São iguais, usados de forma intercambiável",
-      "'null' representa a ausência de valor, 'undefined' é atribuído explicitamente",
-      "Ambos representam valores vazios"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Como se adiciona um evento a um elemento HTML usando JavaScript?",
-    respostas: [
-      "Apenas com CSS",
-      "Usando o atributo 'event'",
-      "Através do método 'addEventListener'"
+      "A. AC Milan",
+      "B. Inter de Milão",
+      "C. Juventus",
     ],
     correta: 2
   },
 ];
 
 
-  const quiz = document.querySelector('#quiz')
-  const template = document.querySelector('template')
+const quiz = document.querySelector('#quiz')
+const template = document.querySelector('template')
+
+const correta = new Set()
+const totalDePerguntas = perguntas.length
+const mostrarTotal = document.querySelector('#acertos span')
+mostrarTotal.textContent = correta.size + ' de ' + totalDePerguntas
+
+
+// loop ou laço de repetição
+for(const item of perguntas) {
+  const quizItem = template.content.cloneNode(true)
+  quizItem.querySelector('h3').textContent = item.pergunta
   
-  const correta = new Set()
-  const totalDePerguntas = perguntas.length
-  const mostrarTotal = document.querySelector('#acertos span')
-  mostrarTotal.textContent = correta.size + ' de ' + totalDePerguntas
-
-
-  // loop ou laço de repetição
-  for(const item of perguntas) {
-    const quizItem = template.content.cloneNode(true)
-    quizItem.querySelector('h3').textContent = item.pergunta
-    
-    for(let resposta of item.respostas) {
-      const dt = quizItem.querySelector('dl dt').cloneNode(true)
-      dt.querySelector('span').textContent = resposta
-      dt.querySelector('input').setAttribute('name','pergunta-'+ perguntas.indexOf(item))
-      dt.querySelector('input').value = item.respostas.indexOf(resposta)
-      dt.querySelector('input').onchange = (event) => {
-        const estaCorreta = event.target.value == item.correta
-        
-        correta.delete(item)
-        if(estaCorreta){ 
-          correta.add(item)
-    
-       }
-       mostrarTotal.textContent = correta.size + ' de ' + totalDePerguntas
-      }
+  for(let resposta of item.respostas) {
+    const dt = quizItem.querySelector('dl dt').cloneNode(true)
+    dt.querySelector('span').textContent = resposta
+    dt.querySelector('input').setAttribute('name','pergunta-'+ perguntas.indexOf(item))
+    dt.querySelector('input').value = item.respostas.indexOf(resposta)
+    dt.querySelector('input').onchange = (event) => {
+      const estaCorreta = event.target.value == item.correta
       
-      quizItem.querySelector('dl').appendChild(dt)
-
-
+      correta.delete(item)
+      if(estaCorreta){ 
+        correta.add(item)
+  
+     }
+     mostrarTotal.textContent = correta.size + ' de ' + totalDePerguntas
     }
-  
     
-    quizItem.querySelector('dl dt').remove()
-    
-    
-    // coloca a pergunta na tela
-    quiz.appendChild(quizItem)
+    quizItem.querySelector('dl').appendChild(dt)
+
+
   }
+
   
+  quizItem.querySelector('dl dt').remove()
+  
+  
+  // coloca a pergunta na tela
+  quiz.appendChild(quizItem)
+}
