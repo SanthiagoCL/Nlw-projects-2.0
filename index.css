@@ -14,24 +14,28 @@
 }
 
 body {
-background-color: #050030;
+background-color: black;
 }
 
 main{
   padding: 20px;
   max-width: 640px;
   margin:0 auto 64px;
+
 }
 header{
   margin-top: 64px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #334155;
+  border-bottom: 1px solid white;
 }
 
 header h1{
+  text-align: center;
   margin-top: 24px;
   font-size: 30px;
-  color: #e2e8f0;
+  color: #f8f8f8;
+  
+  
 }
 #quiz{
   counter-reset: quiz-item;
@@ -39,7 +43,7 @@ header h1{
 }
 .quizitem {
   margin-top: 24px;
-  border: 1px solid #475569;
+  border: 1px solid white;
   border-radius: 6px;
   overflow: hidden;
 
@@ -53,14 +57,12 @@ header h1{
   align-items: center;
   gap: 12px;
 
-  background-color: #1E293B;
-
 }
 .quizitem h3::before{
   counter-increment: quiz-item;
   content:counter(quiz-item);
   
-  background-color: #475569;
+  background-color: red;
   width: 28px;
   height: 28px;
   font-size: 12px;
@@ -103,14 +105,14 @@ input{
 }
 
 input:checked{
-  border: 1px solid greenyellow;
+  border: 1px solid white;
 }
 
 input:checked:before {
   content: "";
   width: 10px;
   height: 10px;
-  background-color:greenyellow;
+  background-color: red;
   border-radius: 50px;
 
 
@@ -118,7 +120,7 @@ input:checked:before {
 
 #acertos{
   text-align: center;
-  background-color: greenyellow;
+  background-color: white;
 
   position: fixed;
   bottom: 0;
