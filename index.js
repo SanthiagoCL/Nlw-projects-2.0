@@ -1,4 +1,4 @@
-const perguntasFutebolEuropeu = [
+const perguntas = [
   {
     pergunta: "Qual clube venceu a Liga dos Campeões da UEFA na temporada 2020-2021?",
     resposta: [
