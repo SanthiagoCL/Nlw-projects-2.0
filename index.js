@@ -1,93 +1,93 @@
 const perguntas = [
   {
-    pergunta: "Qual clube venceu a UEFA Champions League na temporada 2020-2021?",
+    pergunta: "Em que ano o Sport Club Corinthians Paulista foi fundado?",
     respostas: [
-      "A. Real Madrid",
-      "B. Liverpool",
-      "C. Chelsea",
+      "A. 1908",
+      "B. 1910",
+      "C. 1912",
     ],
-    correta: 2
+    correta: 1,
   },
   {
-    pergunta: "Quem foi o artilheiro da Premier League na temporada 2020-2021?",
+    pergunta: "Qual estádio é a casa do Corinthians?",
     respostas: [
-      "A. Mohamed Salah",
-      "B. Bruno Fernandes",
-      "C. Harry Kane",
+      "A. Estádio do Pacaembu",
+      "B. Arena Corinthians",
+      "C. Morumbi",
     ],
-    correta: 2
+    correta: 1,
   },
   {
-    pergunta: "Qual país sediou a Eurocopa 2020 (adiada para 2021)?",
+    pergunta: "Quem é o maior artilheiro da história do Corinthians?",
     respostas: [
-      "A. França",
-      "B. Alemanha",
-      "C. Itália",
+      "A. Marcelinho Carioca",
+      "B. Ronaldo Fenômeno",
+      "C. Cláudio",
     ],
-    correta: 2
+    correta: 2,
   },
   {
-    pergunta: "Em que ano a França sediou e venceu a Copa do Mundo da FIFA?",
+    pergunta: "Quantos títulos brasileiros de primeira divisão o Corinthians possui até 2022?",
     respostas: [
-      "A. 1998",
-      "B. 2002",
-      "C. 2006",
+      "A. 5",
+      "B. 7",
+      "C. 9",
     ],
-    correta: 0
+    correta: 2,
   },
   {
-    pergunta: "Qual jogador venceu o prêmio de Melhor Jogador da FIFA em 2020?",
+    pergunta: "Qual foi o ano da conquista da Copa Libertadores da América pelo Corinthians?",
     respostas: [
-      "A. Lionel Messi",
-      "B. Cristiano Ronaldo",
-      "C. Robert Lewandowski",
+      "A. 2010",
+      "B. 2012",
+      "C. 2014",
     ],
-    correta: 0
+    correta: 1,
   },
   {
-    pergunta: "Qual equipe conquistou mais títulos da Bundesliga até 2022?",
+    pergunta: "Quem é conhecido como 'Doutor' e é ídolo do Corinthians?",
     respostas: [
-      "A. Borussia Dortmund",
-      "B. Bayern de Munique",
-      "C. Bayer Leverkusen",
+      "A. Sócrates",
+      "B. Rivelino",
+      "C. Neto",
     ],
-    correta: 1
+    correta: 0,
   },
   {
-    pergunta: "Quem é o treinador do Manchester City na temporada 2023-2024?",
+    pergunta: "Qual técnico comandou o Corinthians na conquista da FIFA Club World Cup em 2000?",
     respostas: [
-      "A. Jurgen Klopp",
-      "B. Pep Guardiola",
-      "C. Carlo Ancelotti",
+      "A. Tite",
+      "B. Oswaldo de Oliveira",
+      "C. Vanderlei Luxemburgo",
     ],
-    correta: 1
+    correta: 2,
   },
   {
-    pergunta: "Qual jogador português é conhecido como 'O Fenômeno'?",
+    pergunta: "Qual jogador foi o autor do gol histórico conhecido como 'Gol do Título' em 1977?",
     respostas: [
-      "A. Cristiano Ronaldo",
-      "B. Luis Figo",
-      "C. Rui Costa",
+      "A. Basílio",
+      "B. Rivelino",
+      "C. Zé Maria",
     ],
-    correta: 1
+    correta: 0,
   },
   {
-    pergunta: "Em que ano o Barcelona venceu seu primeiro título da UEFA Champions League?",
+    pergunta: "Em qual ano o Corinthians conquistou a Copa do Brasil pela primeira vez?",
     respostas: [
-      "A. 1992",
-      "B. 1996",
-      "C. 2000",
+      "A. 1989",
+      "B. 1991",
+      "C. 1995",
     ],
-    correta: 0
+    correta: 1,
   },
   {
-    pergunta: "Qual clube italiano é popularmente conhecido como 'Velha Senhora'?",
+    pergunta: "Qual jogador é conhecido como 'Sheik' e teve papel fundamental na Libertadores e no Mundial de 2012?",
     respostas: [
-      "A. AC Milan",
-      "B. Inter de Milão",
-      "C. Juventus",
+      "A. Emerson Sheik",
+      "B. Jorge Henrique",
+      "C. Danilo",
     ],
-    correta: 2
+    correta: 0,
   },
 ];
 
