@@ -1,95 +1,96 @@
-const perguntas = [
-    {
-      pergunta: "Qual é a finalidade do comando 'console.log()' em JavaScript?",
-      respostas: [
-        "Exibir uma mensagem de erro",
-        "Imprimir dados no console",
-        "Criar uma variável"
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Qual é a função do operador '===' em comparações em JavaScript?",
-      respostas: [
-        "Comparação de valores sem considerar o tipo",
-        "Atribuição de valores",
-        "Comparação estrita de valores e tipos"
-      ],
-      correta: 2
-    },
-    {
-      pergunta: "Como se declara uma variável em JavaScript?",
-      respostas: [
-        "let myVar;",
-        "const myVar = 10;",
-        "ambas as opções acima estão corretas"
-      ],
-      correta: 2
-    },
-    {
-      pergunta: "O que é uma função em JavaScript?",
-      respostas: [
-        "Um tipo de dado",
-        "Um bloco de código reutilizável",
-        "Uma variável global"
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Qual é a diferença entre 'let' e 'const' na declaração de variáveis?",
-      respostas: [
-        "Nenhuma, são sinônimos",
-        "let é usado para valores constantes, const para variáveis",
-        "let permite reatribuição, const cria variáveis imutáveis"
-      ],
-      correta: 2
-    },
-    {
-      pergunta: "O que é o DOM em JavaScript?",
-      respostas: [
-        "Um método de criptografia",
-        "Um modelo de objeto para manipular documentos HTML",
-        "Uma linguagem de programação"
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Como se realiza uma iteração sobre os elementos de um array em JavaScript?",
-      respostas: [
-        "Usando a estrutura 'if-else'",
-        "Com a declaração 'switch'",
-        "Utilizando loops como 'for' ou 'forEach'"
-      ],
-      correta: 2
-    },
-    {
-      pergunta: "O que é o JSON em JavaScript?",
-      respostas: [
-        "Um método de formatação de texto",
-        "Uma linguagem de estilização",
-        "Um formato de dados leve e intercambiável"
-      ],
-      correta: 2
-    },
-    {
-      pergunta: "Qual é a diferença entre 'null' e 'undefined' em JavaScript?",
-      respostas: [
-        "São iguais, usados de forma intercambiável",
-        "'null' representa a ausência de valor, 'undefined' é atribuído explicitamente",
-        "Ambos representam valores vazios"
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Como se adiciona um evento a um elemento HTML usando JavaScript?",
-      respostas: [
-        "Apenas com CSS",
-        "Usando o atributo 'event'",
-        "Através do método 'addEventListener'"
-      ],
-      correta: 2
-    },
-  ];
+const perguntasFutebolEuropeu = [
+  {
+    pergunta: "Qual clube venceu a Liga dos Campeões da UEFA na temporada 2020-2021?",
+    resposta: [
+      "Real Madrid",
+      "Chelsea",
+      "Bayern de Munique",
+    ],
+    correta: 1, // Resposta correta: Chelsea
+  },
+  {
+    pergunta: "Em qual país foi sediada a Eurocopa 2020?",
+    resposta: [
+      "Itália",
+      "Alemanha",
+      "Inglaterra",
+    ],
+    correta: 0, // Resposta correta: Itália
+  },
+  {
+    pergunta: "Quem foi o artilheiro da última temporada da La Liga (2021-2022)?",
+    resposta: [
+      "Lionel Messi",
+      "Karim Benzema",
+      "Cristiano Ronaldo",
+    ],
+    correta: 1, // Resposta correta: Karim Benzema
+  },
+  {
+    pergunta: "Qual país sediará a Copa do Mundo da FIFA em 2022?",
+    resposta: [
+      "Brasil",
+      "Rússia",
+      "Catar",
+    ],
+    correta: 2, // Resposta correta: Catar
+  },
+  {
+    pergunta: "Quantas vezes o Liverpool ganhou a Liga dos Campeões da UEFA até agora?",
+    resposta: [
+      "4",
+      "5",
+      "6",
+    ],
+    correta: 2, // Resposta correta: 6
+  },
+  {
+    pergunta: "Quem é o atual campeão da Premier League (2021-2022)?",
+    resposta: [
+      "Manchester City",
+      "Manchester United",
+      "Liverpool",
+    ],
+    correta: 0, // Resposta correta: Manchester City
+  },
+  {
+    pergunta: "Qual jogador recebeu a Chuteira de Ouro na temporada 2020-2021?",
+    resposta: [
+      "Robert Lewandowski",
+      "Lionel Messi",
+      "Cristiano Ronaldo",
+    ],
+    correta: 0, // Resposta correta: Robert Lewandowski
+  },
+  {
+    pergunta: "Quem é conhecido como 'Faraó' e joga como atacante no Liverpool?",
+    resposta: [
+      "Mohamed Salah",
+      "Sadio Mané",
+      "Roberto Firmino",
+    ],
+    correta: 0, // Resposta correta: Mohamed Salah
+  },
+  {
+    pergunta: "Em qual estádio foi disputada a final da Eurocopa 2016?",
+    resposta: [
+      "Wembley",
+      "Stade de France",
+      "Allianz Arena",
+    ],
+    correta: 1, // Resposta correta: Stade de France
+  },
+  {
+    pergunta: "Quantos títulos da Liga dos Campeões o Barcelona conquistou até agora?",
+    resposta: [
+      "4",
+      "5",
+      "6",
+    ],
+    correta: 1, // Resposta correta: 5
+  },
+];
+
   
   const quiz = document.querySelector('#quiz')
   const template = document.querySelector('template')
